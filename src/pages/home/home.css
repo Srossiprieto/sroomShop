@@ -1,0 +1,9 @@
+.home-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    width: 100%;
+    background-color: var(--background-color);
+    color: var(--primary-text-color);
+}

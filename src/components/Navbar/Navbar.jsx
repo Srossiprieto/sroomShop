@@ -10,8 +10,10 @@ const Navbar = () => {
 
   return (
     <div className='navbar'>
-      <h2>SROOM</h2>
       <ul className='navbar-ul'>
+        <li>
+          <h2>SROOM</h2>
+        </li>
         <li>
           <Link to='/'>Home</Link>
         </li>

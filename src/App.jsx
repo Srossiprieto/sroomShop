@@ -5,11 +5,10 @@ import Navbar from './components/Navbar/Navbar';
 import Home from './pages/home/home';
 import Error from './pages/error/error';
 import About from './pages/about/about';
-import { ThemeProvider } from './components/ThemeContext/ThemeContext';
 
 function App() {
   return (
-    <ThemeProvider>
+
       <Router>
         <Navbar />
         <Routes>
@@ -18,7 +17,7 @@ function App() {
           <Route path="*" element={<Error />} />
         </Routes>
       </Router>
-    </ThemeProvider>
+
   );
 }
 

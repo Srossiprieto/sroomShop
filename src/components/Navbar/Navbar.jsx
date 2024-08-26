@@ -1,27 +1,16 @@
-import  { useContext, useState } from 'react';
+import { useContext } from 'react';
 import { Link, Outlet } from 'react-router-dom';
-import { ThemeContext } from '../ThemeContext/ThemeContext';
+import { ThemeContext } from '../../contexts/ThemeContext/ThemeContext';
 import './Navbar.css';
-import SunSvg from '../../assets/sun';
-import MoonSvg from '../../assets/moon';
+import SunSvg from '../../assets/Icons/sun';
+import MoonSvg from '../../assets/Icons/moon';
 
 const Navbar = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-
-  const handleDropdownToggle = () => {
-    setDropdownOpen(!dropdownOpen);
-  };
-
-  const handleThemeChange = (newTheme) => {
-    if (theme !== newTheme) {
-      toggleTheme();
-    }
-    setDropdownOpen(false);
-  };
 
   return (
     <div className='navbar'>
+      <h2>SROOM</h2>
       <ul className='navbar-ul'>
         <li>
           <Link to='/'>Home</Link>
@@ -35,19 +24,9 @@ const Navbar = () => {
         <Outlet />
       </ul>
       <div className='theme-selector'>
-        <button onClick={handleDropdownToggle} className='theme-button'>
+        <button onClick={toggleTheme} className='theme-button'>
           {theme === "dark" ? <MoonSvg/> : <SunSvg/> }
         </button>
-        {dropdownOpen && (
-          <div className='dropdown-menu'>
-            <button onClick={() => handleThemeChange("light")} className='dropdown-item'>
-              <SunSvg/> 
-            </button>
-            <button onClick={() => handleThemeChange("dark")} className='dropdown-item'>
-              <MoonSvg/> 
-            </button>
-          </div>
-        )}
       </div>
     </div>
   );

@@ -1,3 +1,4 @@
+
 * {
     border: 1px solid blue;
     margin: 0;
@@ -12,12 +13,13 @@
     font-feature-settings: normal;
     font-variation-settings: normal;
     -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.25s ease-in-out;
     
   }
   
   :root {
     --background-color: #f6f6f6;
-    --icon-color: #262626;
+    --icon-color: #B3B4B9;
     --icon-hover: rgba(138, 133, 133, 0.297);
 
     --primary-text-color: #0a0a0a;
@@ -28,6 +30,9 @@
 
     --bg-container: #F5F5F5;
     --icon-shop: #B3B4B9;
+
+    --text-gray: #a8a9ae;
+
 
     --button-bg: #0f172a;
 
@@ -40,7 +45,7 @@
   
   [data-theme="dark"] {
     --background-color: #1e293c;
-    --icon-color: #ffffffe3;
+    --icon-color: #B3B4B9;
     --icon-hover: rgba(181, 177, 177, 0.22);
 
     --primary-text-color: #fff;
@@ -51,6 +56,9 @@
     
     --bg-container: #F5F5F5;
     --icon-shop: #B3B4B9;
+
+    --text-gray: #a8a9ae;
+
 
     --button-bg: #0f172a;
     --bg-container: #4e5b7d;

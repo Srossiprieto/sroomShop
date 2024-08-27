@@ -1,9 +1,15 @@
 import { useContext } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import { ThemeContext } from '../../contexts/ThemeContext/ThemeContext';
+
 import './Navbar.css';
+
 import SunSvg from '../../assets/Icons/sun';
 import MoonSvg from '../../assets/Icons/moon';
+
+import Search from '../Search/Search';
+import ShopSvg from '../../assets/Icons/shop';
+
 
 const Navbar = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
@@ -25,7 +31,11 @@ const Navbar = () => {
         </li>
         <Outlet />
       </ul>
+        <Search/>
       <div className='theme-selector'>
+        <div className='shop-container'>
+          <ShopSvg/>
+        </div>
         <button onClick={toggleTheme} className='theme-button'>
           {theme === "dark" ? <MoonSvg/> : <SunSvg/> }
         </button>

@@ -6,9 +6,9 @@ import Home from './pages/home/home';
 import Error from './pages/error/error';
 import About from './pages/about/about';
 
+
 function App() {
   return (
-
       <Router>
         <Navbar />
         <Routes>
@@ -17,7 +17,6 @@ function App() {
           <Route path="*" element={<Error />} />
         </Routes>
       </Router>
-
   );
 }
 

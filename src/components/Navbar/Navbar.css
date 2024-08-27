@@ -2,9 +2,9 @@
   background-color: var(--background-color);
   color: var(--primary-text-color);
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 3vh 10vh 3vh 10vh;
+  justify-content: space-between;
+  padding: 1rem 10rem 1rem 10rem;
   border-bottom: 1px solid var(--border-divisor);
 }
 
@@ -14,6 +14,8 @@
   justify-content: space-around;
   width: 40%;
 }
+
+
 
 .navbar-ul li{
   display: flex;
@@ -30,7 +32,9 @@
   color: var(--navbar-text-color);
   border-radius: 2px;
   text-decoration: none;
-  padding: 1vh;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
   transition: all 0.3s ease;
 }
 .navbar-ul li a:hover{
@@ -38,6 +42,8 @@
 }
 .theme-selector {
   position: relative;
+  display: flex;
+  gap: 10px;
 }
 
 .theme-button {
@@ -55,4 +61,19 @@
 
 .theme-button:hover {
   background-color: var(--icon-hover);
+}
+
+
+.shop-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+@media (max-width: 768px) {
+  .navbar-ul li a{
+    display: none;
+  }
 }

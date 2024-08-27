@@ -6,16 +6,15 @@ import './Navbar.css';
 
 import SunSvg from '../../assets/Icons/sun';
 import MoonSvg from '../../assets/Icons/moon';
-
-import Search from '../Search/Search';
 import ShopSvg from '../../assets/Icons/shop';
 
+import Search from '../Search/Search';
 
 const Navbar = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
-    <div className='navbar'>
+    <nav className='navbar'>
       <ul className='navbar-ul'>
         <li>
           <h2>SROOM</h2>
@@ -27,20 +26,24 @@ const Navbar = () => {
           <Link to='products'>Productos</Link>
         </li>
         <li>
-          <Link to="about">Nosotros</Link>
+          <Link to='about'>Nosotros</Link>
         </li>
         <Outlet />
       </ul>
-        <Search/>
       <div className='theme-selector'>
+        <Search />
         <div className='shop-container'>
-          <ShopSvg/>
+          <ShopSvg />
         </div>
-        <button onClick={toggleTheme} className='theme-button'>
-          {theme === "dark" ? <MoonSvg/> : <SunSvg/> }
+        <button 
+          onClick={toggleTheme} 
+          className='theme-button' 
+          aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
+        >
+          {theme === 'dark' ? <MoonSvg /> : <SunSvg />}
         </button>
       </div>
-    </div>
+    </nav>
   );
 };
 

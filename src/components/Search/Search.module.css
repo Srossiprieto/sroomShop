@@ -39,3 +39,9 @@
     right: 14px;
     cursor: pointer;
 }
+
+@media (max-width: 768px) {
+    .search{
+        display: none;
+    }
+}

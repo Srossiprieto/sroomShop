@@ -13,10 +13,10 @@ function Layout({children}) {
             <main>
                 {children}
             </main>
+        </div>
             <footer>
                 <Footer/>
             </footer>
-        </div>
     </>
   )
 }

@@ -3,13 +3,19 @@
   color: var(--primary-text-color);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
-  z-index: 1000;
   padding: 1rem 10rem;
   border-bottom: 1px solid var(--border-divisor);
+
 }
 
+.navbarContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10rem;
+}
 .navbar-ul {
   list-style: none;
   display: flex;

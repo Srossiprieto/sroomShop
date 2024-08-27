@@ -39,8 +39,9 @@
     --secondary-text-color: #ff0000;
 
     --navbar-text-color: #020817;
-    --border-divisor: #E2E8F0 ;
-
+    --border-divisor: #b3b4b9 ;
+    --border-footer: #e9e9e9;
+    
     --bg-container: #F5F5F5;
     --icon-shop: #B3B4B9;
 
@@ -67,6 +68,7 @@
 
     --navbar-text-color: #FAFAFA99;
     --border-divisor: #696969;
+    --border-footer: #ff0000;
     
     --bg-container: #F5F5F5;
     --icon-shop: #B3B4B9;

@@ -15,33 +15,35 @@ const Navbar = () => {
 
   return (
     <nav className='navbar'>
-      <ul className='navbar-ul'>
-        <li>
-          <h2>SROOM</h2>
-        </li>
-        <li>
-          <Link to='/'>Home</Link>
-        </li>
-        <li>
-          <Link to='products'>Productos</Link>
-        </li>
-        <li>
-          <Link to='about'>Nosotros</Link>
-        </li>
-        <Outlet />
-      </ul>
-      <div className='theme-selector'>
-        <Search />
-        <div className='shop-container'>
-          <ShopSvg />
+      <div className="navbarContainer">
+        <ul className='navbar-ul'>
+          <li>
+            <h2>SROOM</h2>
+          </li>
+          <li>
+            <Link to='/'>Home</Link>
+          </li>
+          <li>
+            <Link to='products'>Productos</Link>
+          </li>
+          <li>
+            <Link to='about'>Nosotros</Link>
+          </li>
+          <Outlet />
+        </ul>
+        <div className='theme-selector'>
+          <Search />
+          <div className='shop-container'>
+            <ShopSvg />
+          </div>
+          <button 
+            onClick={toggleTheme} 
+            className='theme-button' 
+            aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
+            >
+            {theme === 'dark' ? <MoonSvg /> : <SunSvg />}
+          </button>
         </div>
-        <button 
-          onClick={toggleTheme} 
-          className='theme-button' 
-          aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
-        >
-          {theme === 'dark' ? <MoonSvg /> : <SunSvg />}
-        </button>
       </div>
     </nav>
   );

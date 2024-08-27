@@ -3,6 +3,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  #root{
+    background-color: var(--background-color); 
+
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
     line-height: 1.5;
     -webkit-text-size-adjust: 100%;
     -moz-tab-size: 4;
@@ -13,9 +27,8 @@
     font-variation-settings: normal;
     -webkit-tap-highlight-color: transparent;
     transition: background-color 0.25s ease-in-out;
-    background-color: var(--background-color);
-    
-  }
+    }
+
   
   :root {
     --background-color: #f6f6f6;

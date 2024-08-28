@@ -1,7 +1,7 @@
-import './about.css';
+import styles from './about.module.css';
 function about() {
   return (
-    <div className="about-home">
+    <div className={styles.aboutHome}>
         <h1>ABOUT</h1>
     </div>
   )

@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import { ThemeContext } from '../../contexts/ThemeContext/ThemeContext';
 
-import './Navbar.css';
+import styles from './Navbar.module.css';
 
 import SunSvg from '../../assets/Icons/sun';
 import MoonSvg from '../../assets/Icons/moon';
@@ -14,9 +14,9 @@ const Navbar = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
-    <nav className='navbar'>
-      <div className="navbarContainer">
-        <ul className='navbar-ul'>
+    <nav className={styles.navbar}>
+      <div className={styles.navbarContainer}>
+        <ul className={styles.navbarUl}>
           <li>
             <h2>SROOM</h2>
           </li>
@@ -31,14 +31,14 @@ const Navbar = () => {
           </li>
           <Outlet />
         </ul>
-        <div className='theme-selector'>
+        <div className={styles.themeSelector}>
           <Search />
-          <div className='shop-container'>
+          <div className={styles.shopContainer}>
             <ShopSvg />
           </div>
           <button 
             onClick={toggleTheme} 
-            className='theme-button' 
+            className={styles.themeButton} 
             aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
             >
             {theme === 'dark' ? <MoonSvg /> : <SunSvg />}

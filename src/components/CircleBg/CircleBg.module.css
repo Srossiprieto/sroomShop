@@ -1,5 +1,4 @@
-/* CircleBg.module.css */
-.circle {
+.container {
     position: absolute;
     top: 0;
     z-index: -2;

@@ -5,8 +5,6 @@
     align-items: center;
     min-height: 100dvh;
     width: 100%;
-    position: relative; /* Asegúrate de que esto esté presente */
-    z-index: 1;
     background-color: var(--background-color);
     color: var(--primary-text-color);
 }

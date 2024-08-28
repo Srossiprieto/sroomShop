@@ -31,7 +31,6 @@
   justify-content: center;
   align-items: center;
   border-radius: 2px;
-  transition: all 0.3s ease;
 }
 
 .navbarUl li a {
@@ -44,7 +43,6 @@
   padding: 8px 16px;
   font-size: 14px;
   font-weight: 600;
-  transition: all 0.3s ease;
 }
 
 .navbarUl li a:hover {
@@ -67,7 +65,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.3s ease;
 }
 
 .themeButton:hover {

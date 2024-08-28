@@ -9,19 +9,22 @@
   width: 100%;
   padding: 1rem 10rem;
   border-bottom: 1px solid var(--border-divisor);
-
 }
 
-.navbarContainer{
+.navbarContainer {
   display: flex;
   justify-content: space-between;
-  gap: 35rem;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
 }
+
 .navbar-ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
   width: 40%;
+  transition: max-height 0.3s ease;
 }
 
 .navbar-ul li {
@@ -84,8 +87,9 @@
     padding: 1rem 5rem;
   }
 
-  .navbar-ul {
+  .navbar-ul li a {
     width: 50%;
+    display: none;
   }
 }
 
@@ -94,14 +98,19 @@
     padding: 1rem 2rem;
   }
 
-  .navbar-ul li a {
-    display: none; /* Hide the navbar links */
+  .navbar-ul li a{
+    flex-direction: column;
+    align-items: flex-start;
+    display: none;
   }
-  
-  
 
-  .navbar .menu-toggle {
-    display: block; /* Show the menu toggle button */
+  .navbar-ul.open {
+    max-height: 300px; /* Adjust as needed */
+  }
+
+
+  .menu-toggle {
+    display: block;
   }
 }
 

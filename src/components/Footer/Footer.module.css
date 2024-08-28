@@ -100,16 +100,15 @@
   .footer {
     padding: 1rem 5rem;
   }
-
+  .footerColumns {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 768px) {
 
   .footer {
-    padding: 2rem 2rem;
-  }
-  .footerColumns {
-    flex-direction: column;
+    padding: 1rem 2rem;
   }
   .footerContainer{
     display: flex;
@@ -123,5 +122,11 @@
   .newsletter {
     margin-bottom: 2rem;
     align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+      padding: 1rem;
   }
 }

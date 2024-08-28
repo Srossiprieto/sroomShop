@@ -23,7 +23,7 @@
   list-style: none;
   display: flex;
   width: 40%;
-  transition: max-height 0.3s ease;
+  justify-content: space-between;
 }
 
 .navbarUl li {

@@ -2,7 +2,6 @@
   background-color: var(--footer-bg);
   color: var(--primary-text-color);
   padding: 2rem 10rem;
-  border-top: 1px solid var(--border-divisor);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,7 +11,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 10rem;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .newsletter {
@@ -23,6 +23,7 @@
 .newsletterContainer {
   display: flex;
   flex-direction: column;
+  max-width: 100vh;
 }
 
 .newsletter form {
@@ -94,14 +95,24 @@
   gap: 1rem;
 }
 
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 1024px) {
   .footer {
-    padding: 2rem 1rem;
-    align-items: flex-start;
-    justify-content: flex-start;
+    padding: 1rem 5rem;
   }
 
+}
+
+@media screen and (max-width: 768px) {
+
+  .footer {
+    padding: 2rem 2rem;
+  }
   .footerColumns {
+    flex-direction: column;
+  }
+  .footerContainer{
+    display: flex;
     flex-direction: column;
   }
 

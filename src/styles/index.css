@@ -11,8 +11,7 @@
 
   #root{
     background-color: var(--background-color); 
-    transition: background-color 0.25s ease;
-
+    
   }
   
   body {
@@ -28,6 +27,7 @@
     font-variation-settings: normal;
     -webkit-tap-highlight-color: transparent;
     background-color: var(--background-color);
+    transition: background-color 0.25s ease;
   }
 
   

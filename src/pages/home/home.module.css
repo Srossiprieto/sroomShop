@@ -1,10 +1,118 @@
-/* home.css */
 .homeDiv {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100dvh;
+    flex-direction: column;
+    min-height: 100vh; /* Corrige la unidad de altura */
     width: 100%;
     background-color: var(--background-color);
     color: var(--primary-text-color);
+}
+
+.containerBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+}
+.button {
+    position: relative;
+    z-index: 1;
+    background: transparent;
+    color: var(--primary-text-color);
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 30px; /* Ajusta según sea necesario */
+    overflow: hidden;
+    height: 1px; /* Ajusta la altura según sea necesario */
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 -14px 10px #8fdfff1f; /* Sombra principal */
+    transition: box-shadow 0.5s ease-out; /* Transición para el efecto hover */
+}
+
+.button:hover {
+    box-shadow: inset 0 -5px 10px #8fdfff3f; /* Sombra en estado hover */
+}
+.button::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    background: linear-gradient(to right, rgba(255, 170, 64, 0.5), rgba(156, 64, 255, 0.5), rgba(255, 170, 64, 0.5));
+    background-size: 200% 100%;
+    z-index: -1;
+    border-radius: inherit;
+    animation: gradient-animation 3s infinite;
+    border: 3.5px solid transparent;
+    mask: linear-gradient(var(--background-color) 0 0) content-box, linear-gradient(var(--background-color) 0 0);
+    mask-composite: exclude;
+    
+    
+}
+
+.buttonText{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, rgba(255, 170, 64, 0.5), rgba(156, 64, 255, 0.5), rgba(255, 170, 64, 0.5));
+    /* background-size: 200% 100%; */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradient-animation 3s infinite;
+    z-index: 1;
+}
+.containerBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+/* Optional: Keyframes for gradient animation */
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+.buttonGray{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgba(128, 128, 128, 0.403);
+    
+}
+
+.emote{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }

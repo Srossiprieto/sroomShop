@@ -42,6 +42,10 @@ body {
 
   --button-bg: #0f172a;
 
+  /* button */
+  --bg-button: #0f172a;
+  --text-button: #fff;
+  
   --foreground-color: #003cff;
 
   --toggle-bg: #f0eb9d;
@@ -74,10 +78,16 @@ body {
   --button-bg: #0f172a;
   --bg-container: #4e5b7d;
 
+    /* button */
+    --bg-button: #fff;
+    --text-button: #151519;
+
   --foreground-color: #ff5656;
 
   --toggle-bg: #283452;
   --toggle-fg: #00a6ff;
 
+
+  
 
 }

@@ -78,6 +78,14 @@
     animation: gradient-animation 3s infinite;
     z-index: 1;
 }
+
+@media (max-width: 768px) {
+    .buttonText{
+        font-size: 14px;
+    }
+}
+
+
 .containerBtn{
     display: flex;
     justify-content: center;

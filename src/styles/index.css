@@ -33,7 +33,7 @@ body {
   --border-divisor: #b3b4b9;
   --border-footer: #ada8a8;
 
-  --bg-container: #F5F5F5;
+  --bg-container: #d4fdffd1;
   --icon-shop: #B3B4B9;
 
   --text-gray: #a8a9ae;
@@ -51,7 +51,11 @@ body {
   --toggle-bg: #f0eb9d;
   --toggle-fg: #ffd000;
 
+  --max-width: 1000px;
+  --padding-w1024: 1rem 2rem;
+  --padding-w480: 1rem;
 
+  
 
 
 }
@@ -68,7 +72,6 @@ body {
   --border-divisor: #696969;
   --border-footer: #B3B4B9;
 
-  --bg-container: #F5F5F5;
   --icon-shop: #B3B4B9;
 
   --text-gray: #a8a9ae;
@@ -87,7 +90,8 @@ body {
   --toggle-bg: #283452;
   --toggle-fg: #00a6ff;
 
+  --max-width: 1000px;
 
-  
+
 
 }

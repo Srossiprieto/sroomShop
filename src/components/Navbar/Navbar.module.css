@@ -5,9 +5,9 @@
   align-items: center;
   justify-content: center;
   position: fixed;
-  z-index: 100;
   width: 100%;
-  padding: 1rem 10rem;
+  z-index: 100;
+  padding: 1rem;
   border-bottom: 1px solid var(--border-divisor);
 }
 
@@ -15,8 +15,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  max-width: 1200px;
+  width: var(--max-width);
 }
 
 .navbarUl {
@@ -80,7 +79,7 @@
 /* Responsive Styles */
 @media (max-width: 1024px) {
   .navbar {
-    padding: 1rem 5rem;
+    padding: var(--padding-w1024);
   }
 
   .navbarUl li a {
@@ -91,7 +90,7 @@
 
 @media (max-width: 768px) {
   .navbar {
-    padding: 1rem 2rem;
+    padding: var(--padding-w1024);
   }
 
   .navbarUl li a {
@@ -111,7 +110,7 @@
 
 @media (max-width: 480px) {
   .navbar {
-    padding: 1rem;
+    padding: var(--padding-w480);
   }
 
   .themeSelector {

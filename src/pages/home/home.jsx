@@ -2,24 +2,30 @@ import styles from './home.module.css';
 import About from '../about/about';
 import Button from '../../components/Ui/Button/Button';
 import RightSvg from '../../assets/Icons/right';
+
+
 function Home() {
   return (
     <>
-      <div className={styles.homeDiv}>
-        <div className={styles.containerBox}>
-          <a className={styles.button} data-text="hola">
-            <div className={styles.containerBtn}>
-              <span className={styles.emote}>🎉</span>
-              <span className={styles.buttonGray}>|</span>
-              <span className={styles.buttonText}>Introducing Hero Video Dialog</span>
-            </div>
+    <div className={styles.containerGeneral}>
+      <div className={styles.containerHome}>
+        <div className= {styles.containerFlex}>
+          <h1>Home Page</h1>
+            <Button>
               <RightSvg />
-          </a>
+              Click me
+            </Button>
         </div>
-        <h1>Home</h1> 
-        <Button />
+        <div className= {styles.containerFlex}>
+          <h1>Home Page</h1>
+            <Button>
+              <RightSvg />
+              Click me
+            </Button>
+        </div>
       </div>
-      <About />
+        <About />
+    </div>
     </>
   );
 }

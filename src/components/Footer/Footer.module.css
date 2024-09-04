@@ -5,14 +5,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .footerContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 100%;
-  max-width: 1200px;
+  width: var(--max-width);
 }
 
 .newsletter {
@@ -98,7 +98,7 @@
 
 @media screen and (max-width: 1024px) {
   .footer {
-    padding: 1rem 5rem;
+    padding: var(--padding-w1024);
   }
   .footerColumns {
     flex-direction: column;
@@ -108,7 +108,7 @@
 @media screen and (max-width: 768px) {
 
   .footer {
-    padding: 1rem 2rem;
+    padding: var(--padding-w1024);
   }
   .container{
     display: flex;
@@ -127,6 +127,6 @@
 
 @media (max-width: 480px) {
   .footer {
-      padding: 1rem;
+      padding: var(--padding-w480);
   }
 }

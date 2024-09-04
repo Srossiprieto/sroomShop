@@ -1,11 +1,9 @@
-
 .containerGeneral{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100%;    
-    background-color: red;
     border-radius: 1rem;
 }
 .containerHome {
@@ -14,9 +12,9 @@
     align-items: center;
     flex-direction: column;
     min-height: 70dvh; /* Corrige la unidad de altura */
-    width: 80%;
+    width: 100%;
+    padding: 1rem;
     border-radius: 1rem;
-    background-color: green;
 }
 
 .containerFlex{
@@ -25,9 +23,10 @@
     flex-wrap: wrap;
     align-items: center;
     height: 70dvh;
-    width: 80%;
     padding: 1rem 5rem;
-    background-color: blue;
-
+    width: 100%;
+    border-radius: 10px;
+    background-color: var(--bg-container);
+    margin-top: 100px;
 }
 

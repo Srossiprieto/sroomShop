@@ -16,7 +16,7 @@ function Home() {
               </Button>
           </div>
           <div className= {styles.containerImg}>
-            <img src='' alt="apple" />
+            <img src='' alt="img" />
           </div>
            
         </div>

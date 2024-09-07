@@ -30,6 +30,10 @@ body {
   --icon-color: #B3B4B9;
   --icon-hover: rgba(138, 133, 133, 0.297);
 
+  --icon-color-btn1: #ffffff;
+  --icon-color-btn2: #000000;
+
+
   --primary-text-color: #0a0a0a;
   --secondary-text-color: #ff0000;
 
@@ -76,6 +80,8 @@ body {
     --nav-bg: #121212;
 
   --icon-color: #B3B4B9;
+  --icon-color-btn1: #000000;
+  --icon-color-btn2: #ffffff;
   --icon-hover: rgba(181, 177, 177, 0.22);
 
   --primary-text-color: #fff;

@@ -1,4 +1,4 @@
-const RightSvg = (props) => (
+const RightSvg2 = (props) => (
   <svg
     viewBox="0 0 24 24"
     width={24}
@@ -16,7 +16,7 @@ const RightSvg = (props) => (
     <g id="SVGRepo_iconCarrier">
       <path
         d="M10 7L15 12L10 17"
-        stroke="var(--icon-color-btn1)"  
+        stroke="var(--icon-color-btn2)"  
         strokeWidth={1.5}
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -25,4 +25,4 @@ const RightSvg = (props) => (
   </svg>
 );
 
-export default RightSvg;
+export default RightSvg2;

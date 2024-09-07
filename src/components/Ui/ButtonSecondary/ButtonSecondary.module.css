@@ -1,28 +1,29 @@
-.button {
+
+.button{
     display: flex;
     justify-content: center;
-    background-color: var(--bg-button);
+    background-color: transparent;
     align-items: center;
-    color: var(--text-button);
+    color: var(--primary-text-color);
     padding: 0.5rem 4rem;
     border-radius: var(--border-radius);
     font-weight: 700;
     cursor: pointer;
-    border: none;
+    border: 1px solid rgb(214, 214, 214);
     width: 100%;
-    min-width: 150px; /* Establece un ancho mínimo */
+    min-width: 150px;
 }
 
-.p {
+.p{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
+
 }
 
 @media (max-width: 480px) {
-    .button {
+    .button{
         padding: 0.5rem;
-        width: 100%; /* Asegura que el botón ocupe el ancho completo en pantallas pequeñas */
     }
 }

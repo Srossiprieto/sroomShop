@@ -1,13 +1,10 @@
 import styles from './Button.module.css';
 
 
-function Button() {
+function Button({children}) {
   return (
     <>
-        <div className={styles.container}>
-            <button className={styles.button}>Click me</button>
-        </div>
-      
+      <button className={styles.button}>{children}</button> 
     </>
   )
 }

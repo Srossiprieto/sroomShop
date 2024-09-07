@@ -22,7 +22,11 @@ body {
 }
 
 :root {
-  --background-color: #f6f6f6;
+  --background-color:     background-color: hsla(0, 0%, 100%, 1);
+  background-image: radial-gradient(circle at 44% 70%, hsla(238.03738317757006, 100%, 57%, 0.16) 3.4940600978336827%, transparent 50%), radial-gradient(circle at 89% 87%, hsla(238.03738317757006, 100%, 57%, 0.3) 3.4940600978336827%, transparent 50%);
+  background-blend-mode: normal, normal;
+
+  --nav-bg: #fff;
   --icon-color: #B3B4B9;
   --icon-hover: rgba(138, 133, 133, 0.297);
 
@@ -51,17 +55,26 @@ body {
   --toggle-bg: #f0eb9d;
   --toggle-fg: #ffd000;
 
+  /* details */
+  --detail-violet: #3b0181;
+
   --max-width: 1000px;
   --padding-w1024: 1rem 2rem;
   --padding-w480: 1rem;
-
+  --border-radius: 0.5rem;
   
 
 
 }
 
 [data-theme="dark"] {
-  --background-color: #1e293c;
+  --background-color:
+    background-color: hsla(0, 0%, 0%, 1);
+    background-image: radial-gradient(circle at -50% 157%, rgb(0, 0, 0) 0%, rgb(18, 18, 18) 50%, rgb(17, 17, 17) 100%);
+    background-blend-mode: normal;
+
+    --nav-bg: #121212;
+
   --icon-color: #B3B4B9;
   --icon-hover: rgba(181, 177, 177, 0.22);
 
@@ -79,7 +92,7 @@ body {
   --footer-bg: #4e5b7d;
 
   --button-bg: #0f172a;
-  --bg-container: #4e5b7d;
+  --bg-container: #292929;
 
     /* button */
     --bg-button: #fff;
@@ -90,7 +103,6 @@ body {
   --toggle-bg: #283452;
   --toggle-fg: #00a6ff;
 
-  --max-width: 1000px;
 
 
 

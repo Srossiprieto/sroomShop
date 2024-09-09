@@ -1,5 +1,5 @@
-import React from 'react';
-import IntelSvg from "../../assets/brands/Intel";
+
+import IntelSvg from "../../assets/brands/intel";
 import NokiaSvg from "../../assets/brands/nokia";
 import AppleSvg from "../../assets/brands/apple";
 import SamsungSvg from "../../assets/brands/samsung";

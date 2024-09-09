@@ -6,6 +6,8 @@ import bannerHero from '../../../public/Img/bannerHero.webp';
 import bannerHeroPhone from '../../../public/Img/bannerHeroPhone.webp';
 import About from '../about/about';
 import ButtonSecondary from '../../components/Ui/ButtonSecondary/ButtonSecondary';
+import BrandSlider from '../../components/Slider/SliderBrands';
+
 
 function Home() {
   return (
@@ -32,6 +34,7 @@ function Home() {
             </div>
           </div>
         </div>
+        <BrandSlider text="Marcas"/>
         <About />
       </div>
     </>

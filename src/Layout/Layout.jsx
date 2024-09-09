@@ -3,12 +3,10 @@
 import Footer from "../components/Footer/Footer"
 import Navbar from "../components/Navbar/Navbar"
 import styles from "./Layout.module.css"
-import BlurCircle from "../components/BlurCircle/BlurCircle"
 
 function Layout({children}) {
   return (
     <>
-        <BlurCircle />
             <header>
                 <Navbar/>
             </header>

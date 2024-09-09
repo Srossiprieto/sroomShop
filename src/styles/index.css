@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* transition: background-color 0.25s ease-in-out; */
 }
 
 html {
@@ -11,13 +10,13 @@ html {
 
 #root {
   background-color: var(--background-color);
-  /* transition: background-color 0.25s ease-in-out; */
 }
 
 body {
  
   font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   background-color: var(--background-color);
+
 
 }
 

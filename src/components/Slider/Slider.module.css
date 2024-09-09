@@ -1,0 +1,36 @@
+.sliderContainer {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 150px; /* Ajusta la altura según tus necesidades */
+}
+
+.sliderTrack {
+  display: flex;
+  animation: scroll 40s linear infinite;
+  gap: 5rem;
+}
+
+.sliderItem {
+  flex: 0 0 auto;
+  width: 100px; /* Ajusta el ancho según tus necesidades */
+  height: 100px; /* Ajusta la altura según tus necesidades */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sliderItem svg {
+  width: 100px; /* Ajusta el ancho según tus necesidades */
+  height: 65px; /* Ajusta la altura según tus necesidades */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

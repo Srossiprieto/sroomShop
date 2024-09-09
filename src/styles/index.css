@@ -53,6 +53,11 @@ body {
   /* button */
   --bg-button: #0f172a;
   --text-button: #fff;
+  --bg-button-hover: #4b4b4b;
+  --border-btn: #080808;
+
+  --border-btn2: #d4d4d4;
+  --bg-button-hover2: #f0f0f0;
   
   --foreground-color: #003cff;
 
@@ -95,11 +100,15 @@ body {
 
   --text-gray: #a8a9ae;
 
-  --footer-bg: #4e5b7d;
+  --footer-bg: #353535;
 
   --button-bg: #0f172a;
   --bg-container: #292929;
-
+  --bg-button-hover: #d7d7d7e8;
+  --border-btn: #d4d4d4;
+  --border-btn2: #89898942;
+  --outline-btn2: none;
+  --bg-button-hover2: #dadada7e;
     /* button */
     --bg-button: #fff;
     --text-button: #151519;

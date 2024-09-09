@@ -9,9 +9,30 @@
     border-radius: var(--border-radius);
     font-weight: 700;
     cursor: pointer;
-    border: 1px solid rgb(214, 214, 214);
+    border: 1px solid var(--border-btn2);
     width: 100%;
     min-width: 150px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover{
+    outline: 2px solid var(--border-btn2);
+    outline-offset: 2px;
+    background-color: var(--bg-button-hover2);
+}
+@media (prefers-color-scheme: dark) {
+    .button:hover {
+        outline: none;
+    }
+}
+
+
+.button svg {
+    transition: transform 0.3s ease; /* Añadir transición al SVG */
+}
+
+.button:hover svg {
+    transform: translateX(3px); /* Desplazar el SVG hacia la derecha */
 }
 
 .p{

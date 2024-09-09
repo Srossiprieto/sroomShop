@@ -1,6 +1,6 @@
 import styles from './Footer.module.css';
 import GithubSvg from '../../assets/Icons/github';
-
+import Button from '../Ui/Button/Button';
 function Footer() {
   return (
     <footer className={styles.footer}>
@@ -11,7 +11,7 @@ function Footer() {
             <p>Subscribe to our newsletter to get the latest updates</p>
             <form>
               <input type="email" placeholder="Enter your email" />
-              <button>Subscribe</button>
+              <Button>Suscribete</Button>
             </form>
           </div>
         </div>

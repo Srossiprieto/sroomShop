@@ -11,6 +11,22 @@
     border: none;
     width: 100%;
     min-width: 150px; /* Establece un ancho mínimo */
+    transition: background-color 0.3s ease; /* Definir transición solo aquí */
+}
+
+
+.button:hover{
+    outline: 2px solid var(--border-btn); /* Añadir borde al hacer hover */
+    outline-offset: 2px;
+    background-color: var(--bg-button-hover); 
+}
+
+.button svg {
+    transition: transform 0.3s ease; /* Añadir transición al SVG */
+}
+
+.button:hover svg {
+    transform: translateX(3px); /* Desplazar el SVG hacia la derecha */
 }
 
 .p {

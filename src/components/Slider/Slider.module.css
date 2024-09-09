@@ -9,7 +9,7 @@
 .sliderTrack {
   display: flex;
   animation: scroll 40s linear infinite;
-  gap: 5rem;
+  gap: 3rem;
 }
 
 .sliderItem {
@@ -32,5 +32,22 @@
   }
   100% {
     transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .sliderContainer {
+    height: 100px; /* Ajusta la altura según tus necesidades */
+    width: 90%;
+  }
+
+  .sliderItem {
+    width: 80px; /* Ajusta el ancho según tus necesidades */
+    height: 80px; /* Ajusta la altura según tus necesidades */
+  }
+
+  .sliderItem svg {
+    width: 80px; /* Ajusta el ancho según tus necesidades */
+    height: 50px; /* Ajusta la altura según tus necesidades */
   }
 }

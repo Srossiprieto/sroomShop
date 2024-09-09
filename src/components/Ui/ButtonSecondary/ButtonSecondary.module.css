@@ -1,5 +1,4 @@
-
-.button{
+.button {
     display: flex;
     justify-content: center;
     background-color: transparent;
@@ -15,17 +14,18 @@
     transition: background-color 0.3s ease;
 }
 
-.button:hover{
-    outline: 2px solid var(--border-btn2);
-    outline-offset: 2px;
+.button:hover {
     background-color: var(--bg-button-hover2);
 }
-@media (prefers-color-scheme: dark) {
-    .button:hover {
-        outline: none;
-    }
+
+[data-theme="light"] .button:hover {
+    outline: 2px solid var(--border-btn2);
+    outline-offset: 2px;
 }
 
+[data-theme="dark"] .button:hover {
+    outline: none;
+}
 
 .button svg {
     transition: transform 0.3s ease; /* Añadir transición al SVG */
@@ -35,16 +35,15 @@
     transform: translateX(3px); /* Desplazar el SVG hacia la derecha */
 }
 
-.p{
+.p {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
-
 }
 
 @media (max-width: 480px) {
-    .button{
+    .button {
         padding: 0.5rem;
     }
 }

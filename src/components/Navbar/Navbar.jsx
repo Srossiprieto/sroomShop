@@ -7,11 +7,19 @@ import styles from './Navbar.module.css';
 import SunSvg from '../../assets/Icons/sun';
 import MoonSvg from '../../assets/Icons/moon';
 import ShopSvg from '../../assets/Icons/shop';
+import MenuToggle from '../../assets/Icons/menu';
 
 import Search from '../Search/Search';
 
 const Navbar = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
+
+
+
+
+
+
+
 
   return (
     <nav className={styles.navbar}>
@@ -43,6 +51,7 @@ const Navbar = () => {
             >
             {theme === 'dark' ? <MoonSvg /> : <SunSvg />}
           </button>
+          <MenuToggle className={styles.menuToggle}/>
         </div>
       </div>
     </nav>
